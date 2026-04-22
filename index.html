@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10 Years Hong Kong Female Crime Portrait | 十年香港女子犯罪肖像</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1 data-en="10 Years Hong Kong Female Crime Portrait" data-zh="十年香港女子犯罪肖像">十年香港女子犯罪肖像</h1>
+                <p data-en="Interactive Data Visualization (2014-2024)" data-zh="互動數據可視化 (2014-2024)">互動數據可視化 (2014-2024)</p>
+            </div>
+            <div class="language-toggle">
+                <button id="lang-en" class="lang-btn active">EN</button>
+                <button id="lang-zh" class="lang-btn">繁</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="intro">
+                <div class="intro-content">
+                    <h2 data-en="Reincarnated as a Female Offender" data-zh="轉生成為女犯罪者">轉生成為女犯罪者</h2>
+                    <p data-en="Enter your age to discover what crime you might commit based on real Hong Kong data from 2014-2024." 
+                       data-zh="輸入你的年齡，根據2014-2024年香港真實數據，看看你可能會犯什麼罪。">
+                        輸入你的年齡，根據2014-2024年香港真實數據，看看你可能會犯什麼罪。
+                    </p>
+                </div>
+                <div class="input-section">
+                    <div class="age-input">
+                        <label for="age-input" data-en="Your Age:" data-zh="你的年齡：">你的年齡：</label>
+                        <input type="number" id="age-input" min="10" max="80" value="25" placeholder="25">
+                        <button id="generate-btn" class="btn-primary" data-en="Generate My Crime Profile" data-zh="生成我的犯罪檔案">生成我的犯罪檔案</button>
+                    </div>
+                    <div class="age-slider">
+                        <input type="range" id="age-slider" min="10" max="80" value="25">
+                        <span id="age-display">25</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="result-section" id="result-section">
+                <div class="result-card">
+                    <div class="result-header">
+                        <h3 data-en="Your Crime Profile" data-zh="你的犯罪檔案">你的犯罪檔案</h3>
+                        <div class="age-badge" id="result-age">25歲</div>
+                    </div>
+                    <div class="crime-probabilities" id="crime-probabilities">
+                        <!-- 這裡會動態生成犯罪概率 -->
+                    </div>
+                    <div class="disclaimer">
+                        <p data-en="Note: This is based on statistical data for educational purposes only. It does not predict individual behavior." 
+                           data-zh="註：此結果僅基於統計數據用於教育目的，不預測個人行為。">
+                            註：此結果僅基於統計數據用於教育目的，不預測個人行為。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="data-source">
+                <h4 data-en="Data Source" data-zh="數據來源">數據來源</h4>
+                <ul>
+                    <li data-en="Hong Kong Police Force Annual Reports (2014-2024)" data-zh="香港警務處年報 (2014-2024)">香港警務處年報 (2014-2024)</li>
+                    <li data-en="Correctional Services Department Statistics" data-zh="懲教署統計數據">懲教署統計數據</li>
+                </ul>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
